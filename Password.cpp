@@ -20,7 +20,7 @@ int Password::count_leading_characters(string phrase){
   return repetition;
 }
 
-bool has_mixed_case(string phrase){
+bool Password::has_mixed_case(string phrase){
   int u = 0, l = 0;
   for (char c: phrase){
     if (isupper(c))

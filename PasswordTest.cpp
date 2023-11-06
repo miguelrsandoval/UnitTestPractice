@@ -34,11 +34,11 @@ TEST(PasswordTest, all_lower_case)
 {
     Password my_password;
 	int actual = my_password.has_mixed_case("abc");
-	ASSERT_EQ(1,actual);
+	ASSERT_EQ(0,actual);
 }
 TEST(PasswordTest, all_upper_case)
 {
     Password my_password;
 	int actual = my_password.has_mixed_case("ABC");
-	ASSERT_EQ(1,actual);
+	ASSERT_EQ(0,actual);
 }
