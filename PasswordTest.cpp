@@ -78,3 +78,9 @@ TEST(PasswordTest, symbols_and_mixed_case_letters)
 	int actual = my_password.has_mixed_case("a$B*c&D");
 	ASSERT_EQ(1,actual);
 }
+TEST(PasswordTest, no_case_characters)
+{
+    Password my_password;
+	int actual = my_password.has_mixed_case("$*&%");
+	ASSERT_EQ(0,actual);
+}
